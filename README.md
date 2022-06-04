@@ -17,3 +17,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Состоит из двух селекторов валют, и двух полей ввода.
 Хороший пример - конвертер валют гугла (загуглите 1 usd to gbp).
 # testcryp
+# testcryp
