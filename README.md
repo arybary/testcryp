@@ -18,3 +18,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Хороший пример - конвертер валют гугла (загуглите 1 usd to gbp).
 # testcryp
 # testcryp
+# testcryp

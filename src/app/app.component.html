@@ -1,0 +1,21 @@
+<app-navigation>
+  <div class="button-row">
+    <button mat-button [disabled]="subscribed" (click)="addSub()">
+      subscribe
+    </button>
+    <button mat-button [disabled]="!subscribed" (click)="unsubscribe()">
+      unsubscribe
+    </button>
+  </div>
+  <mat-progress-bar *ngIf="loading$ | async" mode="query"></mat-progress-bar>
+
+  <div class="container">
+    <app-converter
+      [currencies]="coinsList$ | async"
+      [activeCurrency]="activeCoinId$ | async"
+      [rate]="currentRate$ | async"
+      (currencyChanged)="loadRate($event)"
+    >
+    </app-converter>
+  </div>
+</app-navigation>
